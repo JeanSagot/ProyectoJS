@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Find U</title>
+    <!-------metas--------->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-------styles--------->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-------scripts--------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid" id="titleHeader">
+        <a href=""><img class="logoImg" src="img/findUlogo.png"> </a>
+        <h1>FindU</h1>
+        <h3>Encuentrate en todo lugar</h3>
+    </div>
+
+    <!-------searchBar--------->
+    <div class="search-container">
+        <form action="/action_page.php">
+            <input type="text" placeholder="Busca.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+
+    <!-------Map--------->
+    <div id="map"></div>
+
+    <!-------scripts--------->
+    <script src="js/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmEjBPe5KEORHtGQnVarF6YH0bakVQUjU&callback=initMap">
+    </script>
+</body>
+
+<footer>
+    <h3 id="teamTitle">Integrantes:
+        <ul id="team">
+            <li>Jean Sagot</li>
+            <li>Ariel </li>
+            <li>Daniel Hernandez</li>
+        </ul>
+    </h3>
+</footer>
+
+</html>
